@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Boutique en Ligne</h1>
+        <div id="cart">
+            <span>Panier: <span id="cart-count">0</span> articles</span>
+        </div>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product">
+                <h2>Produit 1</h2>
+                <p>Prix: 10€</p>
+                <button onclick="addToCart('Produit 1', 10)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <h2>Produit 2</h2>
+                <p>Prix: 20€</p>
+                <button onclick="addToCart('Produit 2', 20)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <h2>Produit 3</h2>
+                <p>Prix: 30€</p>
+                <button onclick="addToCart('Produit 3', 30)">Ajouter au panier</button>
+            </div>
+        </section>
+        <section id="cart-items">
+            <h2>Votre Panier</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: <span id="total-price">0</span>€</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
